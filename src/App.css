@@ -16,3 +16,37 @@ html,body{
     background-size: cover;
     background-position: center;
 }
+.card-container {
+    display: flex; /* Используем Flexbox для горизонтального размещения карточек */
+    justify-content: space-around; /* Распределяем карточки по горизонтали */
+    flex-wrap: wrap; /* Позволяем переносить карточки на новую строку при необходимости */
+    margin: 20px; /* Отступы вокруг контейнера */
+  }
+  
+  .card {
+    background-color: #f9f9f9; /* Цвет фона карточки */
+    border: 1px solid #ddd; /* Граница карточки */
+    border-radius: 8px; /* Закругление углов */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    max-width: 300px; /* Максимальная ширина карточки */
+    margin: 10px; /* Отступы между карточками */
+    text-align: center; /* Центрирование текста */
+  }
+  
+  .card-image {
+    width: 100%; /* Ширина изображения */
+    border-radius: 8px 8px 0 0; /* Закругление верхних углов изображения */
+  }
+  
+  .card-title {
+    font-size: 1.5em; /* Размер шрифта заголовка */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  .card-quote {
+    font-size: 1em; /* Размер шрифта цитаты */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    font-style: italic; /* Курсив для цитат */
+  }
